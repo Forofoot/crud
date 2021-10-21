@@ -7,7 +7,7 @@ include('config/settings.php');
 <head>
 	<?php include('includes/head.php'); ?>
 	<link rel="stylesheet" href="css/style_back.css">
-	<title>Ajouter une Actualité</title>
+	<title>Ajouter une Employé</title>
 </head>
 <body>
 	<?php include('includes/header.php'); ?>

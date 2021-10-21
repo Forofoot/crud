@@ -19,7 +19,7 @@ $tActu = $actu->fetchAll(PDO::FETCH_ASSOC);
         <?php include('includes/nav.php'); ?>
         <section class='item'>
              <div class='heading'>
-                <h1>Actualité</h1>
+                <h1>Employé</h1>
                 <a href="../back/addEmploye.php">Poster</a>
             </div>
              <?php foreach ($tActu as $value) { ?>
