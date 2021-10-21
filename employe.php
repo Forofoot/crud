@@ -11,7 +11,7 @@ $tActu = $actu->fetchAll(PDO::FETCH_ASSOC);
 <html>
 <head>
     <?php include('includes/head.php'); ?>
-    <title>Actualité</title>
+    <title>Employé</title>
 </head>
 <body>
     <?php include('includes/header.php'); ?>   
