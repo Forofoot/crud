@@ -12,7 +12,7 @@ include('../config/settings.php');
         unlink('../data/'.$delet);
     }
 
-    $del = $db->prepare('DELETE FROM entreprise WHERE id = :id LIMIT 1');
+    $del = $db->prepare('DELETE FROM employes WHERE id = :id LIMIT 1');
     $del->execute([
         ':id' => $_GET['id']    
     ]);

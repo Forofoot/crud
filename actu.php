@@ -2,7 +2,7 @@
 
 include('../config/settings.php');
 
-$actu = $db->prepare('SELECT * FROM entreprise');
+$actu = $db->prepare('SELECT * FROM employes');
 $actu->execute();
 
 $tActu = $actu->fetchAll(PDO::FETCH_ASSOC);

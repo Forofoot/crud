@@ -45,7 +45,7 @@ if($error){
     $newName = 'pic-'.time().'.'.$extFile;
     move_uploaded_file($_FILES['fichier']['tmp_name'],'../data/'.$newName);
 
-    $add = $db->prepare('INSERT INTO entreprise (file, title, source, date, url) VALUES (:file, :title, :source, :date, :url)');
+    $add = $db->prepare('INSERT INTO employes (file, title, source, date, url) VALUES (:file, :title, :source, :date, :url)');
     $add->execute([
         ':file' => $newName,
         ':title' => $_POST['title'],
