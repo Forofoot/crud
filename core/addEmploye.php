@@ -1,6 +1,6 @@
 <?php
 
-include('../../config/settings.php');
+include('../config/settings.php');
 
 $_POST['title'] = trim($_POST['title']);
 $_POST['source'] = trim($_POST['source']);
