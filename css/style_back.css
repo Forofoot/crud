@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+body main{
+    display: flex;
+}
+header{
+    height: 80px;
+    width: 100%;
+}
+header a{
+    display: inline-block;
+    height: 35px;
+    margin-left: 150px;
+}
+header a img{
+    display: block;
+    height: 100%;
+    width: auto;
+}
+section#nav{
+    height: 95vh;
+    width: 354px;
+    box-shadow: 2px 0px 4px 0px #e4e4e4;
+}
+section#nav aside{
+    text-align: center;
+    padding-top: 20px;
+}
+section#nav nav{
+    display: flex;
+    flex-direction: column;
+}
+section#nav nav a{
+    height: 86px;
+    width: 340px;
+    text-decoration: none;
+    color: rgb(27, 26, 26);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+section#nav nav a.logout{
+    color: rgb(202, 30, 30);
+}
+section#nav nav a div.logout{
+    background-color: rgb(202, 30, 30);
+}
+section#nav nav a div{
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+header, section#nav nav a, main section.item, main section.item div.heading, main section.item div.heading a, main section.item figure, body main form, body main form p.icones, main#login, main#login section{
+    display: flex;
+    align-items: center;
+}
+section#nav nav a, main section.item div.heading a, body main form, body main form p.icones, main#login, main#login section{
+    justify-content: center;
+}
+header, section#nav nav a div, main section.item div.heading a, main section.item figure, body main form button, main#login, main#login form{
+    background-color: rgb(27, 26, 26);
+}
+
+main section.item{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+main section.item div.heading{
+    width: inherit;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+main section.item h1{
+    font-size: 3rem;
+}
+main section.item div.heading a{
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+main section.item figure{
+    color: white;
+    justify-content: space-between;
+    height: 200px;
+    width: inherit;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 3vh;
+}
+main section.item figure figcaption{
+    font-weight: bold;
+    font-size: 1.3rem;
+    word-break: break-all;
+    max-width: 300px;
+    text-transform: capitalize;
+}
+main figure figcaption.date{
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+main figure div.icon{
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+main figure img{
+    height: 100%;
+}
+main figure a svg{
+    height: 30px;
+    width: 30px;
+    fill: white;
+}
+body main form{
+    background-color: #1A1919;
+    border-radius: 8px;
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+}
+body main form p{
+    margin: 20px;
+}
+body main form input{
+    height: 54px;
+    width: 873px;
+    background-color: #1A1919;
+    padding-left: 20px;
+    border: 1px solid #EAD7D7;
+    color: white;
+    border-radius: 4px;
+}
+body main form p.addFile{
+    display: flex;
+    flex-direction: column;
+}
+body main form p.addFile label svg{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    fill: white;
+}
+body main form input#more, body main form input#dateIcon{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+body main form button{
+    height: 45px;
+    width: 273px;
+    font-size: 1.2rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+body main form textarea{
+    background-color: #1A1919;
+    border: 1px solid #EAD7D7;
+    width: 873px;
+    height: 100px;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+}
+body main form select{
+    height: 54px;
+    width: 873px;
+    background-color: #1A1919;
+    padding-left: 20px;
+    border: 1px solid #EAD7D7;
+    color: white;
+    border-radius: 4px;
+}
+body main section.item form p a svg{
+    fill: white;
+    height: 30px;
+    width: 30px;
+}
+main#login{
+    height: 100vh;
+    flex-direction: column;
+}
+main#login section{
+    width: 100%;
+}
+main#login section img{
+    width: 203px;
+    height: 288px;
+}
+main#login form{
+    width: 100%;
+    margin-top: 0;
+}
+main#login form p{
+    display: flex;
+    flex-direction: column;
+}
+main#login form p input{
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    color: rgb(27, 26, 26);
+}
+main#login form p label{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+main#login form button{
+    height: 50px;
+    width: 154px;
+    background-color: white;
+    color: rgb(27, 26, 26);
+}
+@media (max-width: 1325px){
+    body main section.item form{
+        width: 700px;
+    }
+    body main section.item form input, body main section.item form textarea, body main section.item form select{
+        width: 500px;
+    }
+}
+@media (max-width: 1200px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    section#nav{
+        height: 15vh;
+        width: 100%;
+    }
+    section#nav nav{
+        flex-direction: initial;
+    }
+    section#nav nav a{
+        font-size: 1rem;
+    }
+    section#nav nav a div{
+        height: 0;
+        width: 0;
+    }
+    main section.item figure figcaption{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767px){
+
+    header a{
+        margin-left: 95px;
+    }
+    section#nav nav a{
+        justify-content: initial;
+        font-size: 0.8rem;
+    }
+    main section.item h1{
+        font-size: 2rem;
+    }
+    main section.item div.heading a{
+        height: 50px;
+        width: 150px;
+        font-size: 1.2rem;
+        justify-content: center;
+    }
+    main section.item figure{
+        height: 150px;
+    }
+    main section.item figure figcaption{
+        font-size: 0.8rem;
+    }
+    body main section.item form{
+        width: 500px;
+    }
+    body main section.item form input, body main section.item form textarea, body main section.item form select{
+        width: 400px;
+    }
+}
+@media(max-width: 525px){
+    main section.item figure{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+    section.item figure img{
+        height: 50%;
+    }
+    section#nav nav a{
+        font-size: 0.5rem;
+    }
+    body main section.item form{
+        width: 400px;
+    }
+    body main section.item form input, body main section.item form textarea, body main section.item form select{
+        width: 300px;
+    }
+}
